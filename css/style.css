@@ -10,7 +10,7 @@
     background-color: #fff;
     position: fixed;
     z-index: 2;
-    animation: openup forwards 4s;
+    animation: openup forwards 2.5s;
     top: 0;
 }
 @keyframes openup {
@@ -205,6 +205,9 @@ nav .nav-link{
 .navbar-scrolled .nav-link::after{
     background-color: #fff;
 }
+.navbar-scrolled .navbar-toggler{
+    background-color: #fff !important;
+}
 .contactform{
     direction: ltr;
 }
@@ -301,6 +304,15 @@ textarea:focus{
     background-color: #fff;
     color: #000 !important;
 }
+.imageofplay{
+    aspect-ratio: calc(1.8/1);
+}
+.imageofbook{
+    aspect-ratio: calc(1.43/1);
+}
+.alex{
+    aspect-ratio: calc(1/0.56);
+}
 /* services section */
 
 #services .icon{
@@ -348,4 +360,17 @@ footer .iconsOfFooter ul li:hover{
     background-color: #fff;
     color: #000 !important;
     border-color: #000;
+}
+
+.songs ul li{
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    transition: all .5s;
+}
+.songs ul li:hover{
+    background-color: #000;
+    color: #fff !important;
+    border-color: #fff;
 }
