@@ -37,3 +37,20 @@ window.addEventListener('scroll',reveal);
       navel.classList.remove('navbar-scrolled')
     }
   })
+  window.addEventListener("load",()=>{
+    const loader=document.querySelector('.loader');
+    loader.classList.add("loader-hidden")
+  })
+  window.addEventListener("transitionend",()=>{
+    document.body.removeChild("loader");
+  })
+  var typed = new Typed('#element', {
+    strings: ['Welcome To Our World'],
+    typeSpeed: 80,
+  });
+  var typed = new Typed('#element2', {
+    strings: ['Abanoub Morgan'],
+    typeSpeed: 80,
+  });
+
+  

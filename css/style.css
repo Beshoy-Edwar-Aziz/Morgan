@@ -4,26 +4,42 @@
 .ltr{
     direction: var(--ltr);
 }
-.loadpage{
-    width: 100%;
-    height: 1000vh;
-    background-color: #fff;
+.loader{
     position: fixed;
-    z-index: 2;
-    animation: openup forwards 2.5s;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity,visibility 0.75s,0.75s;
 }
-@keyframes openup {
-    from{
-        top: 0;
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+.loader::after{
+    content: "";
+    position: absolute;
+    border: 15px solid #ddd;
+    border-top-color: #30a5da;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    animation: load 0.75s ease infinite;
+}
+@keyframes load {
+    from {
+        transform: rotate(0turn);
     }
     to{
-        top: 100%;
+        transform: rotate(1turn);
     }
-}
-.loadpage .words{
-    top: 5% !important;
-    animation: openup forwards 4s;
 }
 body{
     direction: rtl;
@@ -51,9 +67,16 @@ section{
 }
 /*  ////////////////////////////////////////// */
 #home .morgan{
-    top: 85%;
-    width: 77%;
-    height: 20%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    min-height: 100vh;
+}
+#home .morgan .brandname{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
 }
 #home .scroll-down{
     bottom: 66%;
@@ -373,4 +396,7 @@ footer .iconsOfFooter ul li:hover{
     background-color: #000;
     color: #fff !important;
     border-color: #fff;
+}
+.typed-cursor{
+    visibility: hidden;
 }

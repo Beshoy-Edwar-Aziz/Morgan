@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700&family=Montserrat:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar-bob">
   
     <nav class="navbar navbar-expand-lg bg-white fixed-top z-1" id="navbar-bob">
@@ -43,20 +44,17 @@
   </div>
 </nav>
 
-<div class="loadpage">
-  <div class="words position-absolute start-50 translate-middle-x">
-  <h1 class="display-2 text-center">Abanoub Morgan</h1>
-  <h2 class="display-2 text-center">Welcome To Our World</h2>
-</div>
-</div>
+<div class="loader"></div>
 <!-- header section -->
-
-<header id="home" class="min-vh-100 rounded-bottom-2">
+<header id="home" class="min-vh-100 rounded-bottom-2 ltr position-relative">
 <div class="container">
     <div class="header-paragraph">
-        <div class="morgan rounded-bottom-2 p-3 bg-white position-absolute shadow-lg start-50 translate-middle text-center">
-            <h1>Abanoub Morgan</h1>
-            <h2 class="typed">Creative Director</h2>
+        <div class="morgan w-100 rounded-bottom-2 p-3 bg-white position-absolute text-center bg-body-secondary">
+          <div class="brandname position-absolute">
+          <h1 id="element" class="display-3 fw-bold">
+            <h2 id="element2" class="display-4 fw-bold"></h2>
+          </h1>
+        </div>
         </div>
     </div>
 </div>
@@ -64,7 +62,7 @@
 
 <!-- about section -->
 
-<section id="about" class="">
+<section id="about">
 <div class="container ">
     <div class="row">
         <div class="col-md-6 reveal">
@@ -75,8 +73,9 @@
         <div class="col-md-6 reveall">
             <div class="about-paragraph">
                 <h2 class="mb-3 mt-3 mt-md-3 mt-lg-0">نبذة عن نفسي</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quibusdam velit veniam incidunt excepturi. Veniam delectus corporis officia voluptates inventore!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel pariatur sequi non eum fuga iure et neque nesciunt quisquam ipsa quidem assumenda nihil molestias optio sed, id quasi tempora consequatur.</p>
+                <p class="fs-3 fw-light"> أبانوب مرجان:<br> 
+                  هو كاتب ومخرج ومعلق صوتي مصري، له العديد من الأعمال التلفزيونية والأعمال الأدبية، حصل على بكالوريوس الإعلام قسم إذاعة وتلفزيون. 
+                </p>
             </div>
         </div>
     </div>
@@ -231,10 +230,10 @@
         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-plays" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">مسرحيات</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-ads" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">الاعلانات</button>
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-ads" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">الإعلانات</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-voice" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">فويس اوفر</button>
+        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-voice" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">ڤويس أوڤر</button>
       </li>
      
     </ul>
@@ -396,7 +395,7 @@
         <div class="row gy-4">
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/Song2.jpeg" class="w-100" alt="الفرنجة">
+              <img src="img/Song2.jpeg" class="w-100 alex" alt="الفرنجة">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="fw-bold">انت بطل</h5>
@@ -412,7 +411,7 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/Song1.jpeg" class="w-100" alt="الفرنجة">
+              <img src="img/Song1.jpeg" class="w-100 alex" alt="الفرنجة">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="fw-bold">بيت جميل</h5>
@@ -428,7 +427,7 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/Song3.jpeg" class="w-100" alt="الفرنجة">
+              <img src="img/Song3.jpeg" class="w-100 alex" alt="الفرنجة">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="fw-bold">مصر فوق الجميع</h5>
@@ -522,14 +521,14 @@
         <div class="row gy-4">
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/ad1.jpg" class="w-100" alt="نجيب سليم">
+              <img src="img/b1.jpg" class="w-100" alt="نجيب سليم">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="fw-bold">نجيب  سليم</h5>
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/lCob2la_Ro/?mibextid=afzh1R" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -538,14 +537,14 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/ad2.PNG" class="w-100 alex" alt="اليكس ويست">
+              <img src="img/b2.PNG" class="w-100 alex" alt="اليكس ويست">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="text-center fw-bold">اليكس ويست-مايا دياب</h5>
                 <div class="icons mt-4">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/lCoc-ohCrU/?mibextid=afzh1R" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -554,14 +553,14 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/ad3.PNG" class="w-100 alex" alt="هارت اتاك">
+              <img src="img/b3.PNG" class="w-100 alex" alt="هارت اتاك">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="text-center fw-bold">هارت اتاك</h5>
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/jtnCZ4QW6F/?mibextid=qC1gEa" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -570,14 +569,14 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/ad4.PNG" class="w-100 alex" alt="دايس">
+              <img src="img/b4.PNG" class="w-100 alex" alt="دايس">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="text-center fw-bold">دايس</h5>
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/lpjmKDkVjn/?mibextid=qC1gEa" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -586,14 +585,14 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/ad5.PNG" class="w-100 alex" alt="تولانجو-سليم">
+              <img src="img/b5.PNG" class="w-100 alex" alt="تولانجو-سليم">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="text-center fw-bold">تولانجو-سليم</h5>
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/lConETS_Tq/?mibextid=afzh1R" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -602,14 +601,14 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/ad6.PNG" class="w-100 alex" alt="روك جولد">
+              <img src="img/b6.PNG" class="w-100 alex" alt="روك جولد">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="text-center fw-bold">روك جولد</h5>
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/kfkLo6bBDf/?mibextid=5Ufylb" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -618,14 +617,14 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/ad7.PNG" class="w-100 alex" alt="القزاز">
+              <img src="img/b7.PNG" class="w-100 alex" alt="القزاز">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="text-center fw-bold">القزاز</h5>
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/kfkPjHuBsB/?mibextid=5Ufylb" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -634,14 +633,14 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/ad8.PNG" class="w-100 alex" alt="اسامة اسماعيل">
+              <img src="img/b8.PNG" class="w-100 alex" alt="اسامة اسماعيل">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="text-center fw-bold">دكتور اسامة اسماعيل</h5>
                 <div class="icons mt-4">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/kfkSigF8H_/?mibextid=qC1gEa" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -650,14 +649,14 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/ad9.PNG" class="w-100 alex" alt="Manzanilla">
+              <img src="img/b9.PNG" class="w-100 alex" alt="Manzanilla">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="text-center fw-bold">Manzanilla Oro</h5>
                 <div class="icons mt-4">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/lAcnjdlqgi/?mibextid=afzh1R" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -677,7 +676,7 @@
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/ckeil_rR3W/" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -691,9 +690,12 @@
               <div class="captio text-dark">
                 <h5 class="text-center fw-bold">استشارة</h5>
                 <div class="icons mt-4">
-                  <ul class="list-unstyled d-flex">
+                  <ul class="list-unstyled gap-2 d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/cLJaEp7o0z/" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
+                    </li>
+                    <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
+                      <a href="https://fb.watch/jrSRaULH2c/?mibextid=qC1gEa" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -709,7 +711,7 @@
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/d9VBpfvEdR/" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -725,7 +727,7 @@
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/dMiobFAydN/" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -741,7 +743,7 @@
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/eC5J9EBE1c/?mibextid=jusegr" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -757,7 +759,7 @@
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/g1B7nMbjD-/" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -766,14 +768,14 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/voice7.PNG" class="w-100 alex" alt="القزاز">
+              <img src="img/voice7.PNG" class="w-100 alex" alt="Xtreme">
               <div class="caption"></div>
               <div class="captio text-dark">
-                <h5 class="text-center fw-bold">القزاز</h5>
+                <h5 class="text-center fw-bold">Xtreme</h5>
                 <div class="icons mt-3">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/lCp13PcDCN/?mibextid=afzh1R" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -782,14 +784,14 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/ad5.PNG" class="w-100 alex" alt="تولانجو-سليم">
+              <img src="img/b5.PNG" class="w-100 alex" alt="تولانجو-سليم">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="text-center fw-bold">تولانجو-سليم</h5>
                 <div class="icons mt-4">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://www.facebook.com/bebo.morgan/videos/266467449315756" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -798,14 +800,126 @@
           </div>
           <div class="col-12 col-md-12 col-lg-4">
             <div class="image position-relative overflow-hidden">
-              <img src="img/ad9.PNG" class="w-100 alex" alt="Manzanilla">
+              <img src="img/b9.PNG" class="w-100 alex" alt="Manzanilla">
               <div class="caption"></div>
               <div class="captio text-dark">
                 <h5 class="text-center fw-bold">Manzanilla Oro</h5>
                 <div class="icons mt-4">
                   <ul class="list-unstyled d-flex">
                     <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
-                      <a href="port3.html" class="text-reset"><i class="fa-solid fa-link fs-6"></i></a>
+                      <a href="https://fb.watch/lAcnjdlqgi/?mibextid=afzh1R" class="text-reset" target="_blank"><i class="fa-solid fa-play fs-6"></i></a>
+                    </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="image position-relative overflow-hidden">
+              <img src="img/voice8.PNG" class="w-100 alex" alt="Careem-uber">
+              <div class="caption"></div>
+              <div class="captio text-dark">
+                <h5 class="text-center fw-bold">Careem</h5>
+                <div class="icons mt-4">
+                  <ul class="list-unstyled d-flex">
+                    <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
+                      <a href="https://www.facebook.com/bebo.morgan/videos/1241639556368261" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
+                    </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="image position-relative overflow-hidden">
+              <img src="img/b7.PNG" class="w-100 alex" alt="قزاز kazaz">
+              <div class="caption"></div>
+              <div class="captio text-dark">
+                <h5 class="text-center fw-bold">قزاز</h5>
+                <div class="icons mt-4">
+                  <ul class="list-unstyled d-flex">
+                    <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
+                      <a href="https://www.facebook.com/kazazrestaurant/videos/872355427242567/?extid=NS-UNK-UNK-UNK-IOS_GK0T-GK1C&mibextid=2Rb1fB" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
+                    </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="image position-relative overflow-hidden">
+              <img src="img/voice9.PNG" class="w-100 alex" alt="العاصمة الادارية">
+              <div class="caption"></div>
+              <div class="captio text-dark">
+                <h5 class="text-center fw-bold">العاصمة الإدارية</h5>
+                <div class="icons mt-4">
+                  <ul class="list-unstyled d-flex">
+                    <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
+                      <a href="https://www.facebook.com/bebo.morgan/videos/352161526978564/" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
+                    </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="image position-relative overflow-hidden">
+              <img src="img/voice10.PNG" class="w-100 alex" alt="تنموي شباب">
+              <div class="caption"></div>
+              <div class="captio text-dark">
+                <h5 class="text-center fw-bold">برنامج تنموي -وزارة الشباب و الرياضة</h5>
+                <div class="icons mt-4">
+                  <ul class="list-unstyled d-flex">
+                    <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
+                      <a href="https://www.facebook.com/100064778796212/videos/pcb.433692505466706/766616901058948" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
+                    </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="image position-relative overflow-hidden">
+              <img src="img/voice11.PNG" class="w-100 alex" alt="البطل">
+              <div class="caption"></div>
+              <div class="captio text-dark">
+                <h5 class="text-center fw-bold">البطل للتطوير العقاري</h5>
+                <div class="icons mt-4">
+                  <ul class="list-unstyled d-flex">
+                    <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
+                      <a href="https://www.facebook.com/bebo.morgan/videos/475464757755211" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
+                    </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="image position-relative overflow-hidden">
+              <img src="img/voice12.PNG" class="w-100 alex" alt="MedCloud">
+              <div class="caption"></div>
+              <div class="captio text-dark">
+                <h5 class="text-center fw-bold">MedCloud</h5>
+                <div class="icons mt-4">
+                  <ul class="list-unstyled d-flex">
+                    <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
+                      <a href="https://www.facebook.com/bebo.morgan/videos/540599377543322" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
+                    </li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="image position-relative overflow-hidden">
+              <img src="img/b4.PNG" class="w-100 alex" alt="دايس">
+              <div class="caption"></div>
+              <div class="captio text-dark">
+                <h5 class="text-center fw-bold">دايس</h5>
+                <div class="icons mt-4">
+                  <ul class="list-unstyled d-flex">
+                    <li class="d-flex rounded-circle justify-content-center align-items-center text-center text-white">
+                      <a href="https://fb.watch/lpjmKDkVjn/?mibextid=qC1gEa" target="_blank" class="text-reset"><i class="fa-solid fa-play fs-6"></i></a>
                     </li>
                 </ul>
                 </div>
@@ -861,10 +975,10 @@
   <div class="iconsOfFooter">
 <ul class="d-flex text-white justify-content-center gap-3 list-unstyled">
   <li class="d-flex justify-content-center align-items-center">
-    <a class="text-reset" href="https://rb.gy/s9msx" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+    <a class="text-reset" href="https://www.facebook.com/bebo.morgan" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
   </li>
   <li class="d-flex justify-content-center align-items-center">
-    <a class="text-reset" href="https://rb.gy/l9zls" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a class="text-reset" href="https://www.instagram.com/bebomorganofficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
   </li>
 </ul>
 </div>
