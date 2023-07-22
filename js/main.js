@@ -40,9 +40,11 @@ window.addEventListener('scroll',reveal);
   window.addEventListener("load",()=>{
     const loader=document.querySelector('.loader');
     loader.classList.add("loader-hidden")
+    return true;
   })
   window.addEventListener("transitionend",()=>{
-    document.body.removeChild("loader");
+    const loader=document.querySelector('.loader');
+    loader.remove();
   })
   var typed = new Typed('#element', {
     strings: ['Welcome To Our World'],
